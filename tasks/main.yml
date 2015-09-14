@@ -1,21 +1,22 @@
 ---
 
 - name: set computername
-  sudo: true
   shell: scutil --set ComputerName {{ computername }}
+  become: yes
   when: ansible_hostname != computername
 
 - name: set hostname
-  sudo: true
   shell: scutil --set HostName {{ computername }}
+  become: yes
   when: ansible_hostname != computername
 
 - name: set localhostname
-  sudo: true
   shell: scutil --set LocalHostName {{ computername }}
+  become: yes
   when: ansible_hostname != computername
 
 - name: set the netbios name
+  become: yes
   osx_defaults:
     domain: com.apple.smb.server
     key: NetBIOSName
