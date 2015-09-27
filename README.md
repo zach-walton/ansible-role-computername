@@ -1,4 +1,4 @@
-# computername
+# superlumic-computername
 
 Ansible role to set the computer name on OSX. This role is part of the Superlumic project that aims to simplify repeat computer setups on OSX, 10.10 and up.
 
@@ -8,7 +8,7 @@ Ansible role to set the computer name on OSX. This role is part of the Superlumi
 
 ## Dependencies
 
-* [osx-defaults](https://github.com/superlumic/ansible-role-osx-defaults)
+* [roderik.superlumic-osx-defaults](https://github.com/superlumic/ansible-role-osx-defaults)
 
 # Usage
 
